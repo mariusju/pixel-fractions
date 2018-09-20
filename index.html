@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Outer</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+			<iframe src="iframe.html" height="400" width="95%" style="background-color: red">
+			</iframe>
+    </div>
+  </body>
+
+  <style>
+    html, body, div, iframe {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  </style>
+  <script>
+    console.log('outside', document.querySelector("iframe").offsetWidth)
+  </script>
+</html>
